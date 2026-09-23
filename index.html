@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Favicon / Browser Tab Icon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Solution — Business Systems Architecture | Aftab Pathan</title>
+
+    <!-- SEO & Search Engine Meta Tags -->
+    <meta name="description" content="Tab Solution by Aftab Pathan - Custom Business Systems Architecture, Google Workspace & Sheets Automation, Financial MIS Dashboards, and Bespoke Web Software in Aurangabad, Maharashtra.">
+    <meta name="keywords" content="Business Systems Architecture, Google Sheets Automation, AppSheet, Financial MIS, Tab Solution, Aftab Pathan, Aurangabad, Custom ERP, Logistics Software">
+    <meta name="author" content="Aftab Pathan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (WhatsApp, Social Link Previews) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tab Solution — Business Systems Architecture | Aftab Pathan">
+    <meta property="og:description" content="Eliminate manual chaos. We design bespoke web software, Google Workspace automation, and live financial MIS dashboards for regional industry leaders.">
+    <meta property="og:image" content="images/Aftab_pathan.png">
+    <meta property="og:url" content="https://tabsolution.in">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPurple: '#7C3AED',
+                        brandPurpleDark: '#6D28D9',
+                        brandPurpleLight: '#F5F3FF',
+                        darkSlate: '#0F172A',
+                        midSlate: '#334155',
+                        lightSlate: '#64748B',
+                        subtleBorder: '#E2E8F0',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="selection:bg-brandPurple selection:text-white">
+
+    <!-- Top Reading Scroll Progress Bar -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Background Grid Texture -->
+    <div class="agency-grid-bg"></div>
+
+    <!-- PRELOADER -->
+    <div id="preloader" aria-hidden="true">
+        <div class="font-mono text-xs text-darkSlate tracking-widest font-bold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brandPurple animate-ping"></span>
+            TAB SOLUTION <span class="text-lightSlate font-normal">/ SYSTEMS</span>
+        </div>
+        <div class="loader-track"><div class="loader-fill"></div></div>
+    </div>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="relative z-10 border-b border-subtleBorder bg-white/80 backdrop-blur-md text-xs py-2 px-6 text-center text-midSlate font-medium">
+        <span class="inline-flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span class="text-darkSlate font-semibold">Custom Business Systems & Automation</span> — Trusted by Regional Industry Leaders
+        </span>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-subtleBorder">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+            <!-- LOGO -->
+            <!-- BRAND LOGO WITH REAL IMAGE -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-white border border-purple-200 flex items-center justify-center p-1 shadow-sm overflow-hidden group-hover:border-brandPurple transition-colors">
+                    <img src="images/favicon.png" alt="Tab Solution Logo" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <!-- Fallback Icon if image not found -->
+                    <i class="fa-solid fa-shapes text-brandPurple hidden"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-darkSlate block leading-none">Tab Solution</span>
+                    <span class="text-[10px] font-mono tracking-wider text-lightSlate uppercase">Aftab Pathan · Systems Studio</span>
+                </div>
+            </a>
+
+            <!-- NAV LINKS -->
+            <div class="hidden xl:flex items-center gap-7 text-sm font-semibold text-midSlate">
+                <a href="#why-us" class="hover:text-brandPurple transition-colors">Why Us</a>
+                <a href="#live-reports" class="hover:text-brandPurple transition-colors">Live MIS</a>
+                <a href="#industries" class="hover:text-brandPurple transition-colors">Industries</a>
+                <a href="#services" class="hover:text-brandPurple transition-colors">Capabilities</a>
+                <a href="#clients" class="hover:text-brandPurple transition-colors">Clients</a>
+                <a href="#guarantee" class="hover:text-brandPurple transition-colors">Guarantee</a>
+                <a href="#faq" class="hover:text-brandPurple transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-brandPurple transition-colors">Contact</a>
+            </div>
+
+            <!-- ACTION BUTTONS -->
+            <div class="hidden sm:flex items-center gap-3">
+                <!-- Language Toggle -->
+                <button onclick="toggleLanguage()" class="px-3 py-2 rounded-xl bg-purple-50 hover:bg-purple-100 border border-purple-200 text-brandPurple font-mono font-bold text-xs flex items-center gap-1.5 transition-all shadow-sm">
+                    <i class="fa-solid fa-globe text-brandPurple"></i>
+                    <span id="lang-text">हिंदी में देखें</span>
+                </button>
+
+                <!-- NDA Button in Navbar -->
+                <button onclick="openNdaModal()" class="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 hover:bg-purple-50 border border-subtleBorder text-darkSlate font-mono font-bold text-xs transition-all shadow-sm">
+                    <i class="fa-solid fa-shield-halved text-emerald-600"></i>
+                    <span>NDA & Privacy</span>
+                </button>
+
+                <!-- Direct WhatsApp CTA -->
+                <a href="https://wa.me/918329962703?text=Hi%20Aftab,%20I'd%20like%20to%20discuss%20a%20business%20solution." target="_blank" class="px-4 py-2.5 rounded-xl btn-purple text-xs font-semibold tracking-wide flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Consult Now</span>
+                </a>
+            </div>
+
+            <!-- MOBILE TOGGLE -->
+            <button id="menu-btn" class="xl:hidden text-midSlate hover:text-darkSlate p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-subtleBorder px-6 py-5 space-y-4 text-sm font-semibold">
+            <a href="#why-us" class="block text-midSlate hover:text-brandPurple">Why Us</a>
+            <a href="#live-reports" class="block text-midSlate hover:text-brandPurple">Live MIS</a>
+            <a href="#industries" class="block text-midSlate hover:text-brandPurple">Industries</a>
+            <a href="#services" class="block text-midSlate hover:text-brandPurple">Capabilities</a>
+            <a href="#clients" class="block text-midSlate hover:text-brandPurple">Clients & Impact</a>
+            <a href="#guarantee" class="block text-midSlate hover:text-brandPurple">Guarantee</a>
+            <a href="#faq" class="block text-midSlate hover:text-brandPurple">FAQ</a>
+            <a href="#contact" class="block text-midSlate hover:text-brandPurple">Contact</a>
+            <div class="pt-3 border-t border-subtleBorder space-y-2">
+                <button onclick="toggleLanguage()" class="w-full py-2.5 rounded-xl bg-purple-50 border border-purple-200 text-brandPurple font-mono font-bold text-xs flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Switch Language (EN / हिंदी)</span>
+                </button>
+                <button onclick="openNdaModal()" class="w-full py-2.5 rounded-xl bg-slate-100 border border-slate-200 text-darkSlate font-mono font-bold text-xs flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-shield-halved text-emerald-600"></i>
+                    <span>100% Data Confidentiality & NDA</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero-section" class="relative pt-16 pb-20 px-6 z-10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
+
+            <!-- Hero Left -->
+            <div id="hero-text" class="text-left">
+                <div class="purple-pill mb-6">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brandPurple"></span>
+                    BUSINESS SYSTEMS & OPERATIONS STUDIO — AURANGABAD
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-darkSlate tracking-tight leading-[1.12] mb-6">
+                    Stop wasting hours on manual spreadsheets.
+                    <span class="text-brandPurple block shimmer-text">Automate your business.</span>
+                </h1>
+
+                <p class="max-w-xl text-midSlate text-base sm:text-lg leading-relaxed mb-8">
+                    We engineer bespoke cloud web software, Google Workspace automated ecosystems, and live accounting MIS dashboards that eliminate staff dependency and give you full business control.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <a href="#quote-calculator" class="px-7 py-3.5 rounded-xl btn-purple text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+                        <span>Estimate Custom Scope</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <button onclick="openBookingModal()" class="px-6 py-3.5 rounded-xl btn-white text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-calendar-check text-brandPurple"></i>
+                        <span>Book 15-Min Call</span>
+                    </button>
+                </div>
+
+                <!-- Hero Trust Badge (Clickable NDA) -->
+                <div class="mt-5">
+                    <button onclick="openNdaModal()" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-purple-50 border border-slate-200 text-xs font-mono font-semibold text-midSlate hover:text-brandPurple transition-all shadow-sm">
+                        <i class="fa-solid fa-lock text-emerald-600 text-xs"></i>
+                        <span>Signed Mutual NDA • 100% Private Cloud</span>
+                        <span class="text-brandPurple font-bold text-[10px] underline ml-1">View Guarantee &rarr;</span>
+                    </button>
+                </div>
+
+                <!-- Metrics Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 pt-8 border-t border-subtleBorder font-mono">
+                    <div class="p-3 bg-white rounded-xl border border-subtleBorder shadow-sm">
+                        <span class="block text-2xl font-extrabold text-darkSlate"><span class="count-num" data-count="100">0</span>%</span>
+                        <span class="text-[11px] text-lightSlate uppercase font-semibold">Custom Built</span>
+                    </div>
+                    <div class="p-3 bg-white rounded-xl border border-subtleBorder shadow-sm">
+                        <span class="block text-2xl font-extrabold text-brandPurple"><span class="count-num" data-count="85">0</span>%+</span>
+                        <span class="text-[11px] text-lightSlate uppercase font-semibold">Time Saved</span>
+                    </div>
+                    <div class="p-3 bg-white rounded-xl border border-subtleBorder shadow-sm">
+                        <span class="block text-2xl font-extrabold text-darkSlate">24/7</span>
+                        <span class="text-[11px] text-lightSlate uppercase font-semibold">Stability</span>
+                    </div>
+                    <div class="p-3 bg-white rounded-xl border border-subtleBorder shadow-sm">
+                        <span class="block text-2xl font-extrabold text-brandPurple">Live</span>
+                        <span class="text-[11px] text-lightSlate uppercase font-semibold">MIS Sync</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right: Founder Photo (Proper Landscape 16/11 Fit) -->
+            <div id="hero-figure" class="flex flex-col items-center w-full">
+                <div class="founder-box w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl border border-subtleBorder bg-white p-2.5">
+                    <div class="relative w-full aspect-[16/11] sm:aspect-[4/3] rounded-xl overflow-hidden bg-slate-900">
+                        <img src="images/Aftab_pathan.png" 
+                             alt="Aftab Pathan, Founder - Tab Solution" 
+                             class="w-full h-full object-cover object-center rounded-xl transition-transform duration-500 hover:scale-105" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        
+                        <div class="hidden absolute inset-0 flex-col items-center justify-center text-lightSlate bg-slate-100">
+                            <i class="fa-solid fa-user-tie text-4xl mb-2 text-brandPurple/40"></i>
+                            <span class="font-mono text-xs">images/Aftab_pathan.png</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 flex items-center gap-2 text-xs font-mono text-midSlate font-medium">
+                    <span class="w-2 h-2 rounded-full bg-brandPurple animate-pulse"></span>
+                    <span>Aftab Pathan — Principal Systems Architect</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRUSTED CLIENTS STRIP -->
+    <section class="py-10 border-y border-subtleBorder bg-slate-50/70 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-xs font-mono font-bold text-lightSlate uppercase tracking-wider block mb-6">Trusted by Leading Regional Enterprises</span>
+            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs font-mono font-bold text-darkSlate">
+                <span class="px-4 py-2 rounded-xl bg-white border border-subtleBorder shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-soap text-brandPurple"></i> Datt Soap Industry
+                </span>
+                <span class="px-4 py-2 rounded-xl bg-white border border-subtleBorder shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-truck-moving text-brandPurple"></i> All India Transport Company
+                </span>
+                <span class="px-4 py-2 rounded-xl bg-white border border-subtleBorder shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-wheat-awn text-brandPurple"></i> GS Pashukhadya
+                </span>
+                <span class="px-4 py-2 rounded-xl bg-white border border-subtleBorder shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-route text-brandPurple"></i> Kunal Transport Company
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. DRAGGABLE BEFORE/AFTER TRANSFORMATION SLIDER -->
+    <section class="py-20 px-6 bg-slate-50/70 relative z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-arrows-left-right text-brandPurple"></i> INTERACTIVE TRANSFORMATION
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    Drag to See the <span class="text-brandPurple">Transformation</span>
+                </h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">
+                    Drag the center handle left and right to see how chaotic spreadsheets turn into an automated system.
+                </p>
+            </div>
+
+            <div class="relative w-full max-w-4xl mx-auto h-[380px] sm:h-[420px] rounded-3xl overflow-hidden border-2 border-subtleBorder shadow-2xl select-none" id="transform-container">
+                <!-- BEFORE -->
+                <div class="absolute inset-0 bg-[#FFF5F5] p-6 sm:p-8 flex flex-col justify-between font-mono text-xs text-rose-950">
+                    <div class="flex items-center justify-between pb-3 border-b border-rose-200">
+                        <span class="font-bold text-rose-700 flex items-center gap-2">
+                            <i class="fa-solid fa-triangle-exclamation"></i> BEFORE: Manual Excel Chaos
+                        </span>
+                        <span class="bg-rose-100 text-rose-700 px-2.5 py-1 rounded text-[10px] font-bold">99+ Unverified Records</span>
+                    </div>
+
+                    <div class="space-y-2.5 opacity-90 my-auto">
+                        <div class="p-3 bg-white/80 rounded-xl border border-rose-200 flex justify-between items-center text-rose-800">
+                            <span>Party: Apex Traders (Payment 42 Days Late)</span>
+                            <span class="text-rose-600 font-bold bg-rose-50 px-2 py-0.5 rounded">#ERROR! Formula Broken</span>
+                        </div>
+                        <div class="p-3 bg-white/80 rounded-xl border border-rose-200 flex justify-between items-center text-rose-800">
+                            <span>Warehouse Stock Batch #410</span>
+                            <span class="text-rose-600 font-bold">Physical Count Mismatch (-140 Units)</span>
+                        </div>
+                        <div class="p-3 bg-white/80 rounded-xl border border-rose-200 flex justify-between items-center text-rose-800">
+                            <span>Accountant Status</span>
+                            <span class="text-amber-700 font-bold">On 3-Day Leave (Zero Reports Available)</span>
+                        </div>
+                    </div>
+
+                    <div class="text-rose-600 text-[11px] font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-xmark"></i> Result: Salary wastage, delayed decisions & owner stress.
+                    </div>
+                </div>
+
+                <!-- AFTER -->
+                <div class="absolute inset-0 bg-slate-900 p-6 sm:p-8 flex flex-col justify-between font-mono text-xs text-white" id="transform-after-layer" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                        <span class="font-bold text-emerald-400 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check"></i> WITH TAB SOLUTION: Live Auto-Pilot
+                        </span>
+                        <span class="bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded text-[10px] font-bold border border-emerald-500/30">100% Synced (0.2s)</span>
+                    </div>
+
+                    <div class="space-y-2.5 my-auto">
+                        <div class="p-3 bg-slate-800/90 rounded-xl border border-emerald-500/30 flex justify-between items-center">
+                            <span>Apex Traders Ledger</span>
+                            <span class="text-emerald-400 font-bold">Auto WhatsApp Reminder Sent ✔</span>
+                        </div>
+                        <div class="p-3 bg-slate-800/90 rounded-xl border border-emerald-500/30 flex justify-between items-center">
+                            <span>Live Warehouse Batch #410</span>
+                            <span class="text-brandPurple font-bold">100% Barcode Verified Live</span>
+                        </div>
+                        <div class="p-3 bg-slate-800/90 rounded-xl border border-emerald-500/30 flex justify-between items-center">
+                            <span>Today's Executive Net Profit</span>
+                            <span class="text-emerald-400 font-bold">₹1,84,500 (Live on Founder's Phone)</span>
+                        </div>
+                    </div>
+
+                    <div class="text-emerald-400 text-[11px] font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-check"></i> Result: 100% control, zero staff dependency & growing profits.
+                    </div>
+                </div>
+
+                <!-- Handle -->
+                <div class="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] z-20" id="transform-handle" style="left: 50%;">
+                    <div class="w-10 h-10 rounded-full bg-brandPurple text-white flex items-center justify-center text-xs shadow-xl border-2 border-white">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY TAB SOLUTION IS ESSENTIAL (PAIN SECTION) -->
+    <section id="why-us" class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-triangle-exclamation text-amber-500"></i> THE HIDDEN COST OF MANUAL WORK
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    Every business breaks without <span class="text-brandPurple">solid systems.</span>
+                </h2>
+                <p class="text-midSlate text-base sm:text-lg mt-4 leading-relaxed">
+                    If your business stops when you or your key staff take a holiday, you don't own a business — you own an exhausting job.
+                </p>
+            </div>
+
+            <!-- 4 Pain Points -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="p-6 rounded-2xl bg-rose-50/50 border border-rose-100 relative group hover:border-rose-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-user-xmark text-lg"></i>
+                    </div>
+                    <h4 class="text-darkSlate font-bold text-base mb-2">Staff Dependency</h4>
+                    <p class="text-midSlate text-xs leading-relaxed">
+                        When an accountant leaves, they take company knowledge with them. Work comes to an absolute halt.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-rose-50/50 border border-rose-100 relative group hover:border-rose-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-file-invoice-dollar text-lg"></i>
+                    </div>
+                    <h4 class="text-darkSlate font-bold text-base mb-2">Billing & Stock Leaks</h4>
+                    <p class="text-midSlate text-xs leading-relaxed">
+                        Manual spreadsheets always lead to missed payments, unbilled inventory, and duplicate manual entry errors.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-rose-50/50 border border-rose-100 relative group hover:border-rose-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-eye-slash text-lg"></i>
+                    </div>
+                    <h4 class="text-darkSlate font-bold text-base mb-2">Blind Decision Making</h4>
+                    <p class="text-midSlate text-xs leading-relaxed">
+                        Waiting 30 days for month-end reports means you never know real-time profits, cash flow, or branch performance.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-rose-50/50 border border-rose-100 relative group hover:border-rose-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-clock-rotate-left text-lg"></i>
+                    </div>
+                    <h4 class="text-darkSlate font-bold text-base mb-2">Owner Burnout</h4>
+                    <p class="text-midSlate text-xs leading-relaxed">
+                        You spend 70% of your day micromanaging employees on WhatsApp instead of focusing on sales and growth.
+                    </p>
+                </div>
+            </div>
+
+            <!-- LEAKAGE ESTIMATOR -->
+            <div class="max-w-3xl mx-auto p-8 rounded-3xl bg-slate-900 text-white shadow-2xl relative overflow-hidden">
+                <div class="text-center mb-6">
+                    <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest block mb-2">INTERACTIVE AUDIT</span>
+                    <h3 class="text-2xl font-bold">Calculate Your Monthly Operational Leakage</h3>
+                    <p class="text-slate-400 text-xs mt-1">See how much money and time manual data entry is draining from your business right now:</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between text-xs font-mono text-slate-300 mb-2">
+                            <span>Number of staff doing manual entry / reporting:</span>
+                            <span class="text-brandPurple font-bold text-sm" id="staff-val">3 Staff Members</span>
+                        </div>
+                        <input type="range" id="staff-slider" min="1" max="25" value="3" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800 text-center font-mono">
+                        <div class="p-4 rounded-xl bg-slate-800/80">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-amber-400" id="hours-lost">120 hrs</span>
+                            <span class="text-[11px] text-slate-400 uppercase">Wasted Monthly Hours</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-800/80">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-rose-400" id="money-lost">₹3,60,000</span>
+                            <span class="text-[11px] text-slate-400 uppercase">Est. Annual Salary Wastage</span>
+                        </div>
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <a href="https://wa.me/918329962703?text=Hi%20Aftab,%20I%20want%20to%20audit%20and%20automate%20my%20business%20operations." target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs uppercase font-mono tracking-wider transition-all shadow-lg shadow-emerald-500/30">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>Book a Free Systems Audit Call</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ZERO DEPENDENCY LIVE REPORTS (LIVE SIMULATOR) -->
+    <section id="live-reports" class="py-20 px-6 border-t border-subtleBorder bg-slate-50/50 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    ZERO STAFF DEPENDENCY
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    Stop asking: <span class="text-brandPurple">"आज का कलेक्शन कितना हुआ?"</span>
+                </h2>
+                <p class="text-midSlate text-base sm:text-lg mt-4 leading-relaxed">
+                    Never wait for an accountant or manager to send you month-end files. Get 100% accurate, live financial & inventory reports directly on your phone in under 2 seconds.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16">
+                <!-- Left 3 Core Benefits -->
+                <div class="lg:col-span-5 space-y-5">
+                    <div class="p-6 rounded-2xl bg-white border border-subtleBorder shadow-sm hover:border-brandPurple/40 transition-all">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-9 h-9 rounded-lg bg-brandPurpleLight text-brandPurple flex items-center justify-center font-bold text-sm">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <h4 class="font-bold text-darkSlate text-base">Instant 1-Click Access</h4>
+                        </div>
+                        <p class="text-midSlate text-xs leading-relaxed">
+                            No opening heavy software or waiting for email attachments. Open a single secure link on your phone anytime, anywhere.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white border border-subtleBorder shadow-sm hover:border-brandPurple/40 transition-all">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm">
+                                <i class="fa-solid fa-umbrella-beach"></i>
+                            </div>
+                            <h4 class="font-bold text-darkSlate text-base">Staff On Leave? Zero Impact.</h4>
+                        </div>
+                        <p class="text-midSlate text-xs leading-relaxed">
+                            Because data syncs automatically with every billing and dispatch, your reports update live even if your staff is absent.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white border border-subtleBorder shadow-sm hover:border-brandPurple/40 transition-all">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h4 class="font-bold text-darkSlate text-base">Role-Based Data Privacy</h4>
+                        </div>
+                        <p class="text-midSlate text-xs leading-relaxed">
+                            Staff sees only their data entry screen; you see full net profit, margin calculations, and cashflow analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Simulator -->
+                <div class="lg:col-span-7">
+                    <div class="p-6 sm:p-8 rounded-3xl bg-white border-2 border-subtleBorder shadow-xl shadow-purple-500/5">
+                        <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-subtleBorder">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></span>
+                                <span class="text-xs font-mono font-bold text-darkSlate uppercase tracking-wider">Live Executive MIS</span>
+                            </div>
+                            <span class="text-[11px] font-mono text-lightSlate bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
+                                <i class="fa-solid fa-arrows-rotate text-brandPurple mr-1"></i> Auto-Synced: Just now
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 my-6">
+                            <button onclick="switchLiveDemo('sales')" id="tab-sales" class="demo-tab active py-2.5 px-3 rounded-xl text-xs font-bold font-mono transition-all bg-brandPurple text-white shadow-md shadow-purple-500/20">
+                                📊 Sales & Cash
+                            </button>
+                            <button onclick="switchLiveDemo('stock')" id="tab-stock" class="demo-tab py-2.5 px-3 rounded-xl text-xs font-bold font-mono transition-all bg-slate-100 text-midSlate hover:bg-slate-200">
+                                📦 Live Stock
+                            </button>
+                            <button onclick="switchLiveDemo('dues')" id="tab-dues" class="demo-tab py-2.5 px-3 rounded-xl text-xs font-bold font-mono transition-all bg-slate-100 text-midSlate hover:bg-slate-200">
+                                💰 Party Dues
+                            </button>
+                            <button onclick="switchLiveDemo('pnl')" id="tab-pnl" class="demo-tab py-2.5 px-3 rounded-xl text-xs font-bold font-mono transition-all bg-slate-100 text-midSlate hover:bg-slate-200">
+                                📈 Net Profit
+                            </button>
+                        </div>
+
+                        <div id="demo-content" class="p-6 rounded-2xl bg-slate-900 text-white font-mono space-y-4 transition-all"></div>
+
+                        <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                            <span class="text-midSlate font-medium">Want this live dashboard tailored for your business?</span>
+                            <a href="https://wa.me/918329962703?text=Hi%20Aftab,%20I%20want%20a%20Live%20MIS%20Dashboard%20for%20my%20business." target="_blank" class="text-brandPurple font-bold hover:underline flex items-center gap-1">
+                                Get Live Dashboard Built &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIVE WHATSAPP AUTOMATION SIMULATOR -->
+    <section class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <i class="fa-brands fa-whatsapp text-emerald-500"></i> REAL-TIME SIMULATION
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    See WhatsApp Automation <span class="text-brandPurple">in Live Action</span>
+                </h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">
+                    Click the action triggers below to see how our systems automatically communicate with your customers and staff in real time.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
+                <div class="lg:col-span-5 space-y-3">
+                    <span class="text-xs font-mono font-bold text-lightSlate uppercase tracking-wider block mb-2">Select Live Trigger:</span>
+                    
+                    <button onclick="triggerWaSim('dispatch')" id="sim-btn-dispatch" class="sim-btn active w-full p-4 rounded-2xl border-2 border-brandPurple bg-brandPurpleLight/60 text-left transition-all flex items-center justify-between">
+                        <div>
+                            <span class="font-bold text-darkSlate text-sm block">1. Order Dispatch & Invoice</span>
+                            <span class="text-xs text-midSlate">Auto-sends PDF bill + delivery tracking</span>
+                        </div>
+                        <i class="fa-solid fa-truck-fast text-brandPurple"></i>
+                    </button>
+
+                    <button onclick="triggerWaSim('payment')" id="sim-btn-payment" class="sim-btn w-full p-4 rounded-2xl border border-subtleBorder bg-white hover:border-brandPurple/40 text-left transition-all flex items-center justify-between">
+                        <div>
+                            <span class="font-bold text-darkSlate text-sm block">2. Outstanding Payment Alert</span>
+                            <span class="text-xs text-midSlate">Gentle ledger dues reminder with UPI QR</span>
+                        </div>
+                        <i class="fa-solid fa-receipt text-emerald-600"></i>
+                    </button>
+
+                    <button onclick="triggerWaSim('owner')" id="sim-btn-owner" class="sim-btn w-full p-4 rounded-2xl border border-subtleBorder bg-white hover:border-brandPurple/40 text-left transition-all flex items-center justify-between">
+                        <div>
+                            <span class="font-bold text-darkSlate text-sm block">3. Evening Executive Summary</span>
+                            <span class="text-xs text-midSlate">Owner daily collection & low stock ping</span>
+                        </div>
+                        <i class="fa-solid fa-chart-line text-blue-600"></i>
+                    </button>
+                </div>
+
+                <div class="lg:col-span-7 flex justify-center">
+                    <div class="w-full max-w-sm rounded-[36px] bg-slate-900 p-3 shadow-2xl border-4 border-slate-800">
+                        <div class="rounded-t-[28px] bg-[#075E54] px-4 py-3 text-white flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-xs">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <span class="font-bold text-xs block" id="sim-chat-title">Your Company System</span>
+                                <span class="text-[10px] text-emerald-200 font-mono">● Automated Business API</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#EFEAE2] p-4 h-[320px] rounded-b-[28px] overflow-y-auto space-y-3 font-sans text-xs" id="sim-chat-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 100% TAILOR-MADE HIGHLIGHTED SECTION -->
+    <section class="py-24 px-6 border-y-2 border-brandPurple/20 bg-gradient-to-b from-purple-50/70 via-white to-purple-50/40 relative z-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brandPurple text-white font-mono text-xs font-bold uppercase tracking-widest shadow-lg shadow-purple-500/30 mb-5 animate-bounce">
+                    <i class="fa-solid fa-fire text-amber-300"></i> OUR BIGGEST COMPETITIVE ADVANTAGE
+                </div>
+                
+                <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-darkSlate tracking-tight leading-[1.15]">
+                    We adapt 100% to your business. <br>
+                    <span class="text-brandPurple shimmer-text underline decoration-emerald-400 decoration-wavy decoration-2">You never adapt to us.</span>
+                </h2>
+                
+                <p class="text-midSlate text-base sm:text-xl mt-5 font-medium leading-relaxed max-w-2xl mx-auto">
+                    Unlike rigid, off-the-shelf software suites that force you to change your daily habits, <strong class="text-darkSlate">we engineer systems around your existing workflow & language.</strong>
+                </p>
+            </div>
+
+            <!-- Comparison Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16 items-stretch">
+                <!-- Generic Software -->
+                <div class="p-8 sm:p-10 rounded-3xl bg-white border-2 border-rose-200 shadow-xl shadow-rose-500/5 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-rose-500"></div>
+                    
+                    <div>
+                        <div class="flex items-center justify-between pb-5 border-b border-rose-100 mb-6">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-base">
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+                                </span>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl font-extrabold text-darkSlate">Rigid Off-The-Shelf Software</h3>
+                                    <span class="text-[11px] font-mono text-rose-600 font-bold">The One-Size-Fits-All Trap</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 text-xs sm:text-sm text-midSlate font-medium">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm shrink-0"></i>
+                                <span><strong>Forces You to Change:</strong> You must change your invoice format, payment cycles, and terms to fit their software.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm shrink-0"></i>
+                                <span><strong>500 Cluttered Menus:</strong> 90% of buttons are useless for your business and only confuse your staff.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm shrink-0"></i>
+                                <span><strong>Staff Resistance & Failure:</strong> Operators refuse to use it because it's too complicated, returning to paper.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-xmark text-rose-500 mt-1 text-sm shrink-0"></i>
+                                <span><strong>Zero Custom Logic:</strong> Need a special discount rule or batch formula? They refuse or charge ₹50,000 extra.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-rose-100 text-rose-700 text-xs font-mono font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-ban"></i> Result: Expensive monthly bills + staff back to manual work.
+                    </div>
+                </div>
+
+                <!-- Tab Solution Custom Architecture -->
+                <div class="p-8 sm:p-10 rounded-3xl bg-white border-2 border-brandPurple shadow-2xl shadow-purple-500/20 flex flex-col justify-between relative overflow-hidden ring-4 ring-purple-500/10">
+                    <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-brandPurple via-emerald-400 to-brandPurple"></div>
+                    
+                    <span class="absolute top-4 right-4 text-[10px] font-mono font-bold bg-emerald-500 text-white px-3 py-1 rounded-full uppercase shadow-md flex items-center gap-1">
+                        <i class="fa-solid fa-check"></i> Zero Template Promise
+                    </span>
+
+                    <div>
+                        <div class="flex items-center justify-between pb-5 border-b border-purple-100 mb-6">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 h-10 rounded-xl bg-brandPurpleLight text-brandPurple flex items-center justify-center font-bold text-base">
+                                    <i class="fa-solid fa-compass-drafting"></i>
+                                </span>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl font-extrabold text-darkSlate">Tab Solution Bespoke Systems</h3>
+                                    <span class="text-[11px] font-mono text-brandPurple font-bold">100% Tailored to Your Habits</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 text-xs sm:text-sm text-midSlate font-medium">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-sm shrink-0"></i>
+                                <span><strong>Your Exact Business Flow:</strong> We keep your exact fields, party codes, and billing rules—just make them 100x faster.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-sm shrink-0"></i>
+                                <span><strong>3-Button Simple Mobile UI:</strong> Staff sees only what they need (e.g. Barcode Scan, Quantity, Party Name). 0% confusion.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-sm shrink-0"></i>
+                                <span><strong>10-Minute Staff Training:</strong> Because it matches how they already work, non-technical staff learns it instantly with zero pushback.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-sm shrink-0"></i>
+                                <span><strong>Proprietary Formulas Coded:</strong> Your raw material batch ratios, freight weights, and WhatsApp triggers built to your exact specs.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-purple-100 text-brandPurpleDark text-xs font-mono font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-emerald-600"></i> Result: 100% staff adoption, effortless management & growing profits.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <a href="https://wa.me/918329962703?text=Hi%20Aftab,%20I%20want%20a%20100%25%20customized%20system%20built%20for%20my%20exact%20business%20workflow." target="_blank" class="inline-flex items-center gap-3 px-9 py-4 rounded-2xl btn-purple text-xs font-mono font-bold uppercase tracking-wider shadow-2xl shadow-purple-500/40 hover:scale-105 transition-transform">
+                    <i class="fa-brands fa-whatsapp text-lg text-emerald-300"></i>
+                    <span>Discuss Your Custom System Architecture with Aftab</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRIES WE TRANSFORM -->
+    <section id="industries" class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">TAILORED INDUSTRY SOLUTIONS</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">Industries We Transform</h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">Specialized operational workflows engineered for your specific business sector.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="agency-card p-6 rounded-2xl group">
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 text-brandPurple flex items-center justify-center text-lg font-bold mb-4 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-soap"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkSlate mb-2">Soap & FMCG Manufacturing</h3>
+                    <p class="text-midSlate text-xs leading-relaxed mb-4">
+                        Batch formula cost tracking, raw chemical consumption, daily packaging stock, distributor ledger reconciliation & GST auto-invoicing.
+                    </p>
+                    <span class="text-[11px] font-mono text-brandPurple font-semibold">Proven by Datt Soap Industry</span>
+                </div>
+
+                <div class="agency-card p-6 rounded-2xl group">
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 text-brandPurple flex items-center justify-center text-lg font-bold mb-4 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkSlate mb-2">Transport & Fleet Operations</h3>
+                    <p class="text-midSlate text-xs leading-relaxed mb-4">
+                        Instant LR generation, driver advance tracking, diesel & tyre mileage logging, automated party freight billing & live trip profitability.
+                    </p>
+                    <span class="text-[11px] font-mono text-brandPurple font-semibold">Proven by All India & Kunal Transport</span>
+                </div>
+
+                <div class="agency-card p-6 rounded-2xl group">
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 text-brandPurple flex items-center justify-center text-lg font-bold mb-4 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkSlate mb-2">Pashukhadya & Agro Processing</h3>
+                    <p class="text-midSlate text-xs leading-relaxed mb-4">
+                        Grain & raw material valuation, production wastage monitors, dealer credit limit control, and automated payment recovery alerts.
+                    </p>
+                    <span class="text-[11px] font-mono text-brandPurple font-semibold">Proven by GS Pashukhadya</span>
+                </div>
+
+                <div class="agency-card p-6 rounded-2xl group">
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 text-brandPurple flex items-center justify-center text-lg font-bold mb-4 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkSlate mb-2">Wholesale & Multi-Godown Trade</h3>
+                    <p class="text-midSlate text-xs leading-relaxed mb-4">
+                        Central stock sync across multiple godowns, dispatch verification, salesperson order booking mobile apps, and WhatsApp balance receipts.
+                    </p>
+                    <span class="text-[11px] font-mono text-brandPurple font-semibold">Live Multi-Warehouse Sync</span>
+                </div>
+
+                <div class="agency-card p-6 rounded-2xl group">
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 text-brandPurple flex items-center justify-center text-lg font-bold mb-4 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-trowel-bricks"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkSlate mb-2">Construction & Real Estate</h3>
+                    <p class="text-midSlate text-xs leading-relaxed mb-4">
+                        Site-wise cement/steel consumption logs, petty cash monitoring, contractor measurement bill approvals, and unit booking trackers.
+                    </p>
+                    <span class="text-[11px] font-mono text-brandPurple font-semibold">Site-to-Office Live Sync</span>
+                </div>
+
+                <div class="agency-card p-6 rounded-2xl group">
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 text-brandPurple flex items-center justify-center text-lg font-bold mb-4 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkSlate mb-2">Multi-Branch Retail Chains</h3>
+                    <p class="text-midSlate text-xs leading-relaxed mb-4">
+                        Daily counter cash tally, central reordering triggers for fast-moving items, and branch-wise profit comparison in one dashboard.
+                    </p>
+                    <span class="text-[11px] font-mono text-brandPurple font-semibold">Multi-Location Control</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA-FLOW BLUEPRINT -->
+    <section class="py-20 px-6 border-t border-subtleBorder bg-slate-50/50 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-diagram-project text-brandPurple"></i> ARCHITECTURAL BLUEPRINT
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    How Your Connected System <span class="text-brandPurple">Actually Works</span>
+                </h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">
+                    Click through the 4 data stages below to see how messy paper entries turn into real-time business clarity in 0.2 seconds.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-8">
+                <button onclick="switchFlowStage(1)" id="flow-tab-1" class="flow-tab active p-5 rounded-2xl border-2 border-brandPurple bg-white shadow-md text-left transition-all">
+                    <span class="text-xs font-mono font-bold text-brandPurple block mb-1">STAGE 01</span>
+                    <h4 class="font-bold text-darkSlate text-sm">1. Quick Input</h4>
+                    <p class="text-[11px] text-midSlate mt-1">Mobile form, Barcode, or WhatsApp</p>
+                </button>
+
+                <button onclick="switchFlowStage(2)" id="flow-tab-2" class="flow-tab p-5 rounded-2xl border border-subtleBorder bg-white/70 hover:bg-white text-left transition-all">
+                    <span class="text-xs font-mono font-bold text-lightSlate block mb-1">STAGE 02</span>
+                    <h4 class="font-bold text-darkSlate text-sm">2. Script Engine</h4>
+                    <p class="text-[11px] text-midSlate mt-1">Auto-validation & Formula rules</p>
+                </button>
+
+                <button onclick="switchFlowStage(3)" id="flow-tab-3" class="flow-tab p-5 rounded-2xl border border-subtleBorder bg-white/70 hover:bg-white text-left transition-all">
+                    <span class="text-xs font-mono font-bold text-lightSlate block mb-1">STAGE 03</span>
+                    <h4 class="font-bold text-darkSlate text-sm">3. Instant Actions</h4>
+                    <p class="text-[11px] text-midSlate mt-1">PDF Bill & WhatsApp alert sent</p>
+                </button>
+
+                <button onclick="switchFlowStage(4)" id="flow-tab-4" class="flow-tab p-5 rounded-2xl border border-subtleBorder bg-white/70 hover:bg-white text-left transition-all">
+                    <span class="text-xs font-mono font-bold text-lightSlate block mb-1">STAGE 04</span>
+                    <h4 class="font-bold text-darkSlate text-sm">4. Owner MIS</h4>
+                    <p class="text-[11px] text-midSlate mt-1">Live Profit, Stock & Dues sync</p>
+                </button>
+            </div>
+
+            <div class="max-w-5xl mx-auto p-8 rounded-3xl bg-slate-900 text-white font-mono shadow-2xl relative overflow-hidden" id="flow-display-box"></div>
+        </div>
+    </section>
+
+    <!-- DYNAMIC ROI CALCULATOR -->
+    <section class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-calculator text-emerald-500"></i> FINANCIAL LOGIC
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    Calculate Your <span class="text-brandPurple">Investment Payback (ROI)</span>
+                </h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">
+                    See why investing in custom systems pays for itself in less than a month.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-6 space-y-6 p-6 sm:p-8 rounded-3xl bg-slate-50 border border-subtleBorder">
+                    <div>
+                        <div class="flex justify-between text-xs font-mono font-bold text-darkSlate mb-2">
+                            <span>Approx. Monthly Turnover:</span>
+                            <span class="text-brandPurple text-sm" id="turnover-val">₹25,00,000</span>
+                        </div>
+                        <input type="range" id="turnover-slider" min="5" max="200" step="5" value="25" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-purple-600">
+                        <div class="flex justify-between text-[10px] text-lightSlate font-mono mt-1">
+                            <span>₹5 Lakhs</span>
+                            <span>₹1 Crore</span>
+                            <span>₹2 Crore+</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-mono font-bold text-darkSlate mb-2">
+                            <span>Clerical / Data Entry Staff Count:</span>
+                            <span class="text-brandPurple text-sm" id="roi-staff-val">4 Staff</span>
+                        </div>
+                        <input type="range" id="roi-staff-slider" min="1" max="15" value="4" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-purple-600">
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-purple-50 border border-purple-200 text-xs text-brandPurpleDark leading-relaxed">
+                        <i class="fa-solid fa-circle-info mr-1"></i> Calculation factors 35% time recovery, zero bill calculation mismatch, and 2.5x faster customer payment recovery.
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 p-8 rounded-3xl bg-slate-900 text-white shadow-2xl font-mono text-center space-y-5">
+                    <span class="text-[11px] text-emerald-400 font-bold uppercase tracking-widest block">Projected Financial Impact</span>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl bg-slate-800 border border-slate-700">
+                            <span class="text-2xl sm:text-3xl font-extrabold text-emerald-400 block" id="roi-savings">₹4,80,000</span>
+                            <span class="text-[10px] text-slate-400 uppercase">Est. Annual Net Savings</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-800 border border-slate-700">
+                            <span class="text-2xl sm:text-3xl font-extrabold text-amber-400 block" id="roi-payback">18 Days</span>
+                            <span class="text-[10px] text-slate-400 uppercase">Full System Payback</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-800/60 border border-slate-700/60 text-left text-xs text-slate-300 space-y-1.5">
+                        <div class="flex justify-between">
+                            <span>Staff Productivity Boost:</span>
+                            <span class="text-emerald-400 font-bold">+45% Output</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Billing & Ledger Error Rate:</span>
+                            <span class="text-emerald-400 font-bold">Reduced to 0%</span>
+                        </div>
+                    </div>
+
+                    <button onclick="sendRoiToWa()" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-xs uppercase font-mono tracking-wider transition-all shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-2 hover:brightness-110">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Lock In Your Systems Architecture ROI</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REAL CLIENT TESTIMONIALS -->
+    <section id="clients" class="py-20 px-6 border-t border-subtleBorder bg-slate-50/50 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">PROVEN RESULTS</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">What Our Clients Say</h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">Real systems built for real businesses that generate measurable ROI.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="agency-card p-8 rounded-3xl flex flex-col justify-between border-2 border-subtleBorder hover:border-brandPurple/40">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono font-bold text-brandPurple bg-brandPurpleLight px-3 py-1 rounded-full">FMCG & Soap Manufacturing</span>
+                            <div class="text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-extrabold text-darkSlate mb-3">Datt Soap Industry</h4>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            "Tab Solution ने हमारी पूरी मैन्युफैक्चरिंग यूनिट और 100+ डिस्ट्रीब्यूटर्स का बिलिंग व इन्वेंटरी सिस्टम ऑटोमेट कर दिया। अब रॉ केमिकल से लेकर फिनिश्ड सोप स्टॉक का एक-एक पैकेट हमारे फोन पर लाइव ट्रैक होता है। इन्वेंटरी लीकेज पूरी तरह बंद हो गई।"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-subtleBorder flex items-center justify-between text-xs font-mono text-lightSlate">
+                        <span class="font-bold text-darkSlate">Impact: 100% Stock Accuracy</span>
+                        <span>Aurangabad, MH</span>
+                    </div>
+                </div>
+
+                <div class="agency-card p-8 rounded-3xl flex flex-col justify-between border-2 border-subtleBorder hover:border-brandPurple/40">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono font-bold text-brandPurple bg-brandPurpleLight px-3 py-1 rounded-full">Animal Feed & Agro Processing</span>
+                            <div class="text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-extrabold text-darkSlate mb-3">GS Pashukhadya</h4>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            "पशुखाद्य निर्माण में रोजाना अनाज और कच्चे माल के भाव बदलते हैं। Aftab भाई ने ऐसा फॉर्मूलेशन कॉस्टिंग व लाइव डीलर लेजर बनाया जिससे हमें हर बैग पर असली प्रॉफिट पता चलता है। डीलर्स को ऑटोमैटिक व्हाट्सएप पेमेंट अलर्ट जाने से रिकवरी बहुत तेज हो गई।"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-subtleBorder flex items-center justify-between text-xs font-mono text-lightSlate">
+                        <span class="font-bold text-darkSlate">Impact: 4 Hours Saved Daily</span>
+                        <span>Maharashtra</span>
+                    </div>
+                </div>
+
+                <div class="agency-card p-8 rounded-3xl flex flex-col justify-between border-2 border-subtleBorder hover:border-brandPurple/40">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono font-bold text-brandPurple bg-brandPurpleLight px-3 py-1 rounded-full">Fleet Logistics & Freight</span>
+                            <div class="text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-extrabold text-darkSlate mb-3">All India Transport Company</h4>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            "पहले गाड़ियों के डीजल, ड्राइवर एडवांस और पार्टी के भाड़ा बिलों का हिसाब एक्सेल में उलझा रहता था। Tab Solution के सिस्टम के बाद हर गाड़ी की ट्रिप शीट और ब्रांच-वाइज कलेक्शन 1 क्लिक में मिल जाता है। कोई पेपरवर्क का झंझट नहीं बचा।"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-subtleBorder flex items-center justify-between text-xs font-mono text-lightSlate">
+                        <span class="font-bold text-darkSlate">Impact: Multi-Branch Trip Control</span>
+                        <span>Logistics Network</span>
+                    </div>
+                </div>
+
+                <div class="agency-card p-8 rounded-3xl flex flex-col justify-between border-2 border-subtleBorder hover:border-brandPurple/40">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono font-bold text-brandPurple bg-brandPurpleLight px-3 py-1 rounded-full">Transport & Goods Delivery</span>
+                            <div class="text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-extrabold text-darkSlate mb-3">Kunal Transport Company</h4>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            "हमारा LR जनरेशन और पार्टी आउटस्टैंडिंग का काम बहुत फास्ट हो गया है। गाड़ी अनलोड होते ही पार्टी को डिजिटल बिल व्हाट्सएप पर पहुंच जाता है। हमें किसी स्टाफ पर रिपोर्ट के लिए रुकना नहीं पड़ता।"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-subtleBorder flex items-center justify-between text-xs font-mono text-lightSlate">
+                        <span class="font-bold text-darkSlate">Impact: Instant LR & Dues Tracking</span>
+                        <span>Transport Hub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE CAPABILITIES -->
+    <section id="services" class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="purple-pill mb-3">CAPABILITY SET</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-darkSlate tracking-tight">Engineered Solutions</h2>
+                </div>
+                <p class="text-midSlate text-sm max-w-md">
+                    Targeted technological integrations designed to resolve operational bottlenecks, streamline accounting, and eliminate manual clerical tasks.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="agency-card p-8 rounded-2xl md:col-span-2 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-brandPurpleLight border border-purple-200 flex items-center justify-center text-xl text-brandPurple">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <span class="font-mono text-[11px] font-semibold text-brandPurple bg-brandPurpleLight px-3 py-1 rounded-full border border-purple-200">Most Popular</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-darkSlate mb-2 group-hover:text-brandPurple transition-colors">Google Workspace & Workflow Automation</h3>
+                    <p class="text-midSlate text-sm leading-relaxed mb-6 max-w-xl">
+                        Custom AppSheet mobile apps, Google Apps Script automation engines, automated WhatsApp invoicing, and live synchronized inventory ledgers.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono font-medium">
+                        <span class="px-3 py-1 rounded-lg bg-slate-100 text-midSlate border border-slate-200">WhatsApp API Triggers</span>
+                        <span class="px-3 py-1 rounded-lg bg-slate-100 text-midSlate border border-slate-200">Live Inventory Systems</span>
+                        <span class="px-3 py-1 rounded-lg bg-slate-100 text-midSlate border border-slate-200">Google AppScript</span>
+                    </div>
+                </div>
+
+                <div class="agency-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center text-xl text-brandPurple mb-6 group-hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-darkSlate mb-2 group-hover:text-brandPurple transition-colors">Financial MIS & Analytics</h3>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            Tailored Profit & Loss visualizers, automated cash flow tracking, ledger audits, and real-time executive dashboards.
+                        </p>
+                    </div>
+                    <span class="text-xs font-mono font-semibold text-brandPurple">Audit-Ready Accuracy</span>
+                </div>
+
+                <div class="agency-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center text-xl text-brandPurple mb-6 group-hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-darkSlate mb-2 group-hover:text-brandPurple transition-colors">Custom Business Web Apps</h3>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            Internal operations portals, order processing management systems, and proprietary CRM workflows.
+                        </p>
+                    </div>
+                    <span class="text-xs font-mono font-semibold text-lightSlate">Custom Cloud ERP Tools</span>
+                </div>
+
+                <div class="agency-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center text-xl text-brandPurple mb-6 group-hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-darkSlate mb-2 group-hover:text-brandPurple transition-colors">Modern Brand Websites</h3>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            Ultra-fast, responsive web platforms built with precision SEO to convert high-ticket client consultations.
+                        </p>
+                    </div>
+                    <span class="text-xs font-mono font-semibold text-lightSlate">Fast & High Converting</span>
+                </div>
+
+                <div class="agency-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center text-xl text-brandPurple mb-6 group-hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-darkSlate mb-2 group-hover:text-brandPurple transition-colors">Process Engineering</h3>
+                        <p class="text-midSlate text-sm leading-relaxed mb-6">
+                            Digital SOP mapping, multi-department approval cycles, and operational audit architectures.
+                        </p>
+                    </div>
+                    <span class="text-xs font-mono font-semibold text-lightSlate">Systemic Optimization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-POINT GUARANTEE -->
+    <section id="guarantee" class="py-20 px-6 border-t border-subtleBorder bg-slate-50/50 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-shield-halved text-emerald-500"></i> 100% RISK REVERSAL
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">Our 3-Point Guarantee</h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">We eliminate risk so you can modernize your business with total peace of mind.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="agency-card p-8 rounded-3xl border-2 border-subtleBorder">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-darkSlate mb-3">1. 100% Data Confidentiality</h4>
+                    <p class="text-midSlate text-xs sm:text-sm leading-relaxed">
+                        We sign a strict legal Non-Disclosure Agreement (NDA). Your customer ledgers, pricing formulas, and financial numbers remain 100% private to your company Google account.
+                    </p>
+                </div>
+
+                <div class="agency-card p-8 rounded-3xl border-2 border-subtleBorder">
+                    <div class="w-12 h-12 rounded-2xl bg-brandPurpleLight text-brandPurple flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-darkSlate mb-3">2. Zero Business Downtime</h4>
+                    <p class="text-midSlate text-xs sm:text-sm leading-relaxed">
+                        Your ongoing daily work will never stop. We build, test, and verify your new automated architecture in parallel, switching over smoothly without a single hour of disruption.
+                    </p>
+                </div>
+
+                <div class="agency-card p-8 rounded-3xl border-2 border-subtleBorder">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-darkSlate mb-3">3. 30-Days Dedicated Training</h4>
+                    <p class="text-midSlate text-xs sm:text-sm leading-relaxed">
+                        We don't just deliver software and leave. We provide 30 days of hands-on staff training, continuous MIS data verification, and full technical handholding until your team is 100% confident.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <button onclick="openNdaModal()" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-mono text-xs font-bold transition-all shadow-xl hover:scale-105">
+                    <i class="fa-solid fa-file-contract text-emerald-400 text-sm"></i>
+                    <span>View Our Data Confidentiality & Legal NDA Standards</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14-DAY RAPID DEPLOYMENT SPRINT ROADMAP -->
+    <section class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-calendar-check text-brandPurple"></i> 14-DAY RAPID DEPLOYMENT
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    From Chaos to Live Systems in <span class="text-brandPurple">14 Days</span>
+                </h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">
+                    Our zero-downtime deployment framework ensures your business never stops during the transition.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-8">
+                <button onclick="switchSprintPhase(1)" id="sprint-tab-1" class="sprint-tab active p-4 rounded-2xl border-2 border-brandPurple bg-brandPurpleLight/60 text-left transition-all">
+                    <span class="text-[10px] font-mono font-bold text-brandPurple block uppercase">Days 01–03</span>
+                    <h4 class="font-bold text-darkSlate text-sm mt-0.5">Phase 1: Audit</h4>
+                </button>
+
+                <button onclick="switchSprintPhase(2)" id="sprint-tab-2" class="sprint-tab p-4 rounded-2xl border border-subtleBorder bg-white hover:bg-slate-50 text-left transition-all">
+                    <span class="text-[10px] font-mono font-bold text-lightSlate block uppercase">Days 04–08</span>
+                    <h4 class="font-bold text-darkSlate text-sm mt-0.5">Phase 2: Architecture</h4>
+                </button>
+
+                <button onclick="switchSprintPhase(3)" id="sprint-tab-3" class="sprint-tab p-4 rounded-2xl border border-subtleBorder bg-white hover:bg-slate-50 text-left transition-all">
+                    <span class="text-[10px] font-mono font-bold text-lightSlate block uppercase">Days 09–11</span>
+                    <h4 class="font-bold text-darkSlate text-sm mt-0.5">Phase 3: Integration</h4>
+                </button>
+
+                <button onclick="switchSprintPhase(4)" id="sprint-tab-4" class="sprint-tab p-4 rounded-2xl border border-subtleBorder bg-white hover:bg-slate-50 text-left transition-all">
+                    <span class="text-[10px] font-mono font-bold text-lightSlate block uppercase">Days 12–14</span>
+                    <h4 class="font-bold text-darkSlate text-sm mt-0.5">Phase 4: Go Live!</h4>
+                </button>
+            </div>
+
+            <div class="max-w-5xl mx-auto p-8 rounded-3xl bg-slate-900 text-white font-mono shadow-2xl relative" id="sprint-detail-box"></div>
+        </div>
+    </section>
+
+    <!-- INDUSTRY MODULE CONFIGURATOR -->
+    <section class="py-20 px-6 border-t border-subtleBorder bg-slate-50/50 relative z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-sliders text-emerald-500"></i> MODULAR BUILDER
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">
+                    Configure Your <span class="text-brandPurple">Industry Solution Stack</span>
+                </h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">
+                    Select your business sector to instantly generate a recommended software module blueprint.
+                </p>
+            </div>
+
+            <div class="p-8 sm:p-10 rounded-3xl bg-white border-2 border-subtleBorder shadow-xl shadow-purple-500/5">
+                <span class="text-xs font-mono font-bold text-lightSlate uppercase tracking-wider block mb-3">1. Select Your Business Industry:</span>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                    <button onclick="selectIndustryPreset('manufacturing')" id="ind-btn-manufacturing" class="ind-preset-btn active p-3 rounded-xl border-2 border-brandPurple bg-brandPurpleLight/60 text-xs font-bold font-mono text-darkSlate transition-all">
+                        🏭 Soap & FMCG
+                    </button>
+                    <button onclick="selectIndustryPreset('transport')" id="ind-btn-transport" class="ind-preset-btn p-3 rounded-xl border border-subtleBorder bg-slate-50 text-xs font-bold font-mono text-midSlate hover:bg-slate-100 transition-all">
+                        🚛 Transport & Fleet
+                    </button>
+                    <button onclick="selectIndustryPreset('agro')" id="ind-btn-agro" class="ind-preset-btn p-3 rounded-xl border border-subtleBorder bg-slate-50 text-xs font-bold font-mono text-midSlate hover:bg-slate-100 transition-all">
+                        🌾 Cattle Feed / Agro
+                    </button>
+                    <button onclick="selectIndustryPreset('wholesale')" id="ind-btn-wholesale" class="ind-preset-btn p-3 rounded-xl border border-subtleBorder bg-slate-50 text-xs font-bold font-mono text-midSlate hover:bg-slate-100 transition-all">
+                        📦 Wholesale & Retail
+                    </button>
+                </div>
+
+                <span class="text-xs font-mono font-bold text-lightSlate uppercase tracking-wider block mb-3">2. Recommended Architecture Modules:</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" id="preset-modules-container"></div>
+
+                <div class="p-6 rounded-2xl bg-slate-900 text-white font-mono flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-[10px] text-emerald-400 uppercase tracking-widest block">Estimated Deployment Timeline</span>
+                        <span class="text-lg font-bold text-white" id="config-timeline">8–12 Business Days</span>
+                    </div>
+                    <button onclick="sendConfigToWa()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-xs uppercase font-mono tracking-wider transition-all shadow-xl shadow-emerald-500/30 flex items-center justify-center gap-2 hover:brightness-110">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Send Configured Blueprint on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ESTIMATE CALCULATOR -->
+    <section id="quote-calculator" class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-3xl mx-auto agency-card p-8 sm:p-12 rounded-3xl relative">
+            <div class="text-center mb-8">
+                <span class="purple-pill mb-3">
+                    <i class="fa-solid fa-sliders text-[10px]"></i> SCOPE ESTIMATOR
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-darkSlate tracking-tight">Generate Instant Scope Brief</h2>
+                <p class="text-midSlate text-xs sm:text-sm mt-2">Select your requirements to send an organized specification directly to Aftab on WhatsApp.</p>
+            </div>
+
+            <div class="space-y-3 mb-6 font-mono text-xs">
+                <label class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 cursor-pointer hover:border-brandPurple transition-colors">
+                    <input type="checkbox" value="Google Sheets & Process Automation" class="service-checkbox w-4 h-4 accent-purple-600 rounded">
+                    <span class="text-darkSlate font-semibold">Google Workspace, Sheets & Automated Scripts</span>
+                </label>
+
+                <label class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 cursor-pointer hover:border-brandPurple transition-colors">
+                    <input type="checkbox" value="Financial MIS & Executive Dashboard" class="service-checkbox w-4 h-4 accent-purple-600 rounded">
+                    <span class="text-darkSlate font-semibold">Accounting, Financial MIS & P&L Dashboard Architecture</span>
+                </label>
+
+                <label class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 cursor-pointer hover:border-brandPurple transition-colors">
+                    <input type="checkbox" value="Custom Web App / Internal ERP" class="service-checkbox w-4 h-4 accent-purple-600 rounded">
+                    <span class="text-darkSlate font-semibold">Custom Business Web Application / Internal ERP Tool</span>
+                </label>
+
+                <label class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 cursor-pointer hover:border-brandPurple transition-colors">
+                    <input type="checkbox" value="Modern Brand Website" class="service-checkbox w-4 h-4 accent-purple-600 rounded">
+                    <span class="text-darkSlate font-semibold">Modern High-Performance Brand Website</span>
+                </label>
+            </div>
+
+            <div class="mb-6 font-mono">
+                <input type="text" id="client-name" placeholder="Your Name or Company Name" class="w-full px-4 py-3.5 rounded-xl bg-white border border-subtleBorder text-darkSlate placeholder-slate-400 text-xs focus:outline-none focus:border-brandPurple transition-colors">
+            </div>
+
+            <button onclick="sendToWhatsApp()" class="w-full py-4 rounded-xl btn-purple text-xs font-mono uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>Send Scope to WhatsApp</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE FAQ ACCORDION -->
+    <section id="faq" class="py-20 px-6 border-t border-subtleBorder bg-slate-50/50 relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="purple-pill mb-3">FREQUENTLY ASKED QUESTIONS</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-darkSlate tracking-tight">Got Questions? We Have Answers.</h2>
+                <p class="text-midSlate text-sm sm:text-base mt-3">Everything you need to know about modernizing your operations with Tab Solution.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="agency-card rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-darkSlate text-base hover:text-brandPurple transition-colors">
+                        <span>Q1: क्या यह सिस्टम हमारे मौजूदा Tally या Excel डेटा के साथ काम कर सकता है?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-lightSlate transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                        <p class="pb-6 text-midSlate text-sm leading-relaxed">
+                            हाँ, बिल्कुल! हम आपके मौजूदा Tally, Busy या Excel के ऐतिहासिक डेटा को नए क्लाउड सिस्टम में सुरक्षित रूप से माइग्रेट और कनेक्ट कर देते हैं। आपको अपना पिछला डेटा खोने की बिल्कुल चिंता नहीं करनी होगी।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="agency-card rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-darkSlate text-base hover:text-brandPurple transition-colors">
+                        <span>Q2: क्या हमारे कम पढ़े-लिखे या नॉन-टेक्निकल स्टाफ इसे आसानी से चला पाएंगे?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-lightSlate transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                        <p class="pb-6 text-midSlate text-sm leading-relaxed">
+                            100%! हमारा यूजर इंटरफेस (UI) इतना सरल होता है जितना व्हाट्सएप या गूगल पे चलाना। हम स्टाफ के लिए सिर्फ जरूरी इनपुट बटन (जैसे बारकोड स्कैन, ड्रॉपडाउन और वन-टैप बिलिंग) बनाते हैं ताकि कोई भी व्यक्ति बिना गलती किए इसे 10 मिनट में सीख ले।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="agency-card rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-darkSlate text-base hover:text-brandPurple transition-colors">
+                        <span>Q3: हमारा बिजनेस डेटा और कस्टमर रिकॉर्ड्स कितने सुरक्षित रहेंगे?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-lightSlate transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                        <p class="pb-6 text-midSlate text-sm leading-relaxed">
+                            आपका पूरा डेटा आपके ही अधिकार वाले Google Cloud / Workspace सिक्योर सर्वर पर होस्ट होता है। इसके अलावा हम प्रोजेक्ट शुरू करने से पहले एक लीगल नॉन-डिस्क्लोजर एग्रीमेंट (NDA) साइन करते हैं। आपके डेटा का 100% एक्सेस केवल आपके पास रहता है।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="agency-card rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-darkSlate text-base hover:text-brandPurple transition-colors">
+                        <span>Q4: एक पूरा कस्टम सिस्टम तैयार होने में कितना समय लगता है?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-lightSlate transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                        <p class="pb-6 text-midSlate text-sm leading-relaxed">
+                            सामान्य बिजनेस प्रोसेस और Google Workspace ऑटोमेशन 7 से 10 दिनों में लाइव हो जाते हैं। बड़े कस्टम ERP या मल्टी-ब्रांच मैन्युफैक्चरिंग सिस्टम्स में 2 से 3 हफ्ते का समय लगता है, और इस दौरान आपका मौजूदा काम बिना किसी रुकावट के चलता रहता है।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT FOUNDER -->
+    <section id="about" class="py-20 px-6 border-t border-subtleBorder bg-white relative z-10">
+        <div class="max-w-4xl mx-auto agency-card p-8 sm:p-12 rounded-3xl flex flex-col md:flex-row items-center gap-8">
+            <div class="founder-box w-36 h-36 sm:w-44 sm:h-44 shrink-0">
+                <img src="images/Aftab_pathan.png" alt="Aftab Pathan" onerror="this.style.display='none'">
+            </div>
+
+            <div class="space-y-3 text-left">
+                <span class="purple-pill">FOUNDER & ARCHITECT</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-darkSlate">Aftab Pathan</h3>
+                <p class="text-midSlate text-sm leading-relaxed">
+                    At <strong class="text-darkSlate">Tab Solution</strong>, our philosophy is straightforward: <em class="text-brandPurple font-semibold not-italic">"Smart Tools. Better Management. Stronger Business."</em> We architect dependable digital foundations so business owners can focus on expansion rather than administrative firefighting.
+                </p>
+                <div class="pt-2 flex flex-wrap items-center gap-6 text-xs text-midSlate font-mono">
+                    <span><i class="fa-solid fa-location-dot text-brandPurple mr-1.5"></i> Aurangabad, Maharashtra</span>
+                    <span><i class="fa-solid fa-shield-halved text-brandPurple mr-1.5"></i> End-to-End Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-6 border-t border-subtleBorder bg-slate-50/50 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="purple-pill mb-3">GET IN TOUCH</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-darkSlate tracking-tight">Initiate Consultation</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="agency-card p-6 rounded-2xl text-center">
+                    <div class="w-11 h-11 rounded-xl bg-brandPurpleLight flex items-center justify-center text-brandPurple mx-auto mb-4 text-lg">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h4 class="text-darkSlate font-bold mb-1 text-sm">Direct Voice</h4>
+                    <a href="tel:8329962703" class="text-xs text-midSlate hover:text-brandPurple block font-mono font-medium">+91 8329962703</a>
+                    <a href="tel:7773966580" class="text-xs text-midSlate hover:text-brandPurple block font-mono font-medium mt-1">+91 7773966580</a>
+                </div>
+
+                <div class="agency-card p-6 rounded-2xl text-center border-brandPurple">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto mb-4 text-lg">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h4 class="text-darkSlate font-bold mb-1 text-sm">WhatsApp Channel</h4>
+                    <p class="text-[11px] text-lightSlate mb-3">Fastest Response Time</p>
+                    <a href="https://wa.me/918329962703" target="_blank" class="text-xs font-mono uppercase font-bold text-brandPurple hover:underline">Launch Chat &rarr;</a>
+                </div>
+
+                <div class="agency-card p-6 rounded-2xl text-center">
+                    <div class="w-11 h-11 rounded-xl bg-brandPurpleLight flex items-center justify-center text-brandPurple mx-auto mb-4 text-lg">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h4 class="text-darkSlate font-bold mb-1 text-sm">Headquarters</h4>
+                    <p class="text-xs text-midSlate leading-relaxed font-mono">
+                        At Ohar, Jatwada Road,<br />
+                        Aurangabad, MH — 431001
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-subtleBorder bg-white px-6 py-8 relative z-10 text-xs font-mono text-lightSlate">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © <span id="year"></span> <strong class="text-darkSlate">Tab Solution</strong>. Founded by Aftab Pathan.
+            </div>
+            <div class="text-brandPurple font-semibold">
+                Smart Tools. Better Management. Stronger Business.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/918329962703" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-2xl shadow-xl shadow-emerald-500/30 z-40 transition-all hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- 🔒 MUTUAL NDA MODAL (Clean Display None to Prevent Invisible Blocking) -->
+    <div id="nda-modal" class="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-sm items-center justify-center p-4" style="display: none;">
+        <div class="bg-white rounded-3xl p-6 sm:p-10 max-w-2xl w-full border border-subtleBorder shadow-2xl relative max-h-[90vh] overflow-y-auto font-sans">
+            
+            <button onclick="closeNdaModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 text-lightSlate hover:text-darkSlate flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-base"></i>
+            </button>
+
+            <div class="flex items-center gap-3 pb-4 border-b border-subtleBorder mb-6">
+                <div class="w-11 h-11 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold shrink-0">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <span class="purple-pill text-[10px] mb-1">ENTERPRISE SECURITY STANDARD</span>
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-darkSlate">Mutual NDA & Data Privacy Guarantee</h3>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs sm:text-sm text-midSlate mb-8">
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="flex items-center gap-2 font-bold text-darkSlate text-sm mb-1">
+                        <i class="fa-solid fa-lock text-emerald-600"></i>
+                        <span>1. 100% Client-Owned Google Cloud Infrastructure</span>
+                    </div>
+                    <p class="text-lightSlate leading-relaxed text-xs">
+                        Your databases, spreadsheets, script engines, and invoice logs are hosted solely on <strong>your company's official Google Workspace account</strong>. Tab Solution does not store your private business records on any 3rd-party external servers.
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="flex items-center gap-2 font-bold text-darkSlate text-sm mb-1">
+                        <i class="fa-solid fa-file-signature text-emerald-600"></i>
+                        <span>2. Signed Non-Disclosure Agreement (NDA)</span>
+                    </div>
+                    <p class="text-lightSlate leading-relaxed text-xs">
+                        Before receiving any live database access, we execute a legally binding Mutual NDA ensuring that your proprietary formula rates, wholesale pricing, margin calculations, and client registries remain 100% confidential.
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="flex items-center gap-2 font-bold text-darkSlate text-sm mb-1">
+                        <i class="fa-solid fa-user-shield text-emerald-600"></i>
+                        <span>3. Strict Role-Based Internal Access</span>
+                    </div>
+                    <p class="text-lightSlate leading-relaxed text-xs">
+                        We configure strict permission barriers so your ground operators, clerks, and billing staff only see their relevant input screens, preventing them from accessing overall company P&L, margins, or master ledgers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-subtleBorder">
+                <span class="text-xs font-mono text-lightSlate">Founder: Aftab Pathan — Tab Solution</span>
+                <a href="https://wa.me/918329962703?text=Hi%20Aftab,%20I%20want%20to%20request%20a%20signed%20Mutual%20NDA%20copy%20for%20our%20project." target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-500/25">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Request Signed NDA on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📅 15-MIN STRATEGY CALL BOOKING MODAL (Clean Display None) -->
+    <div id="booking-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm items-center justify-center p-4" style="display: none;">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full border border-subtleBorder shadow-2xl relative">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-lightSlate hover:text-darkSlate text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center mb-6">
+                <span class="purple-pill mb-2">15-MIN STRATEGY CALL</span>
+                <h3 class="text-xl font-extrabold text-darkSlate mt-1">Book a Systems Audit Call</h3>
+                <p class="text-xs text-midSlate mt-1">Direct Google Meet / Phone Call with Aftab Pathan</p>
+            </div>
+            <div class="space-y-3 font-mono text-xs">
+                <div>
+                    <label class="text-[10px] text-lightSlate uppercase font-bold block mb-1">Your Name / Business:</label>
+                    <input type="text" id="book-name" placeholder="e.g. Rajesh Kumar (Apex Traders)" class="w-full p-3 rounded-xl border border-subtleBorder bg-slate-50 focus:border-brandPurple focus:outline-none">
+                </div>
+                <div>
+                    <label class="text-[10px] text-lightSlate uppercase font-bold block mb-1">Preferred Time Slot:</label>
+                    <select id="book-time" class="w-full p-3 rounded-xl border border-subtleBorder bg-slate-50 focus:border-brandPurple focus:outline-none text-darkSlate">
+                        <option>Morning (11:00 AM – 01:00 PM)</option>
+                        <option>Afternoon (03:00 PM – 05:00 PM)</option>
+                        <option>Evening (06:00 PM – 08:00 PM)</option>
+                    </select>
+                </div>
+                <button onclick="confirmBooking()" class="w-full py-3.5 rounded-xl btn-purple text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 mt-4 shadow-xl">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Confirm Call via WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
