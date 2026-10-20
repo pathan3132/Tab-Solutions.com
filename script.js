@@ -48,85 +48,17 @@ window.confirmBooking = function() {
     window.closeBookingModal();
 };
 
-// Close modals on clicking outside box
+// Close modals on Escape or clicking outside box
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { window.closeNdaModal(); window.closeBookingModal(); }
+});
+
 window.addEventListener('click', (e) => {
     const ndaModal = document.getElementById('nda-modal');
     const bookingModal = document.getElementById('booking-modal');
     if (e.target === ndaModal) window.closeNdaModal();
     if (e.target === bookingModal) window.closeBookingModal();
 });
-
-// --- (C) Language Toggle Engine (EN ⇄ हिंदी) ---
-let currentLang = localStorage.getItem('tab_lang') || 'en';
-
-const translations = {
-    hi: {
-        langBtn: "English",
-        heroPill: "बिज़नेस सिस्टम्स & ऑटोमेशन स्टूडियो — औरंगाबाद",
-        heroTitle: "मैनुअल एक्सेल और कागज़ों में समय बर्बाद करना बंद करें। <span class='text-brandPurple block shimmer-text'>अपने बिज़नेस को ऑटोमेट करें।</span>",
-        heroDesc: "हम आपके कारखाने, ट्रांसपोर्ट या होलसेल बिज़नेस के लिए ऐसा कस्टम क्लाउड सिस्टम और WhatsApp ऑटोमेशन बनाते हैं जिससे स्टाफ पर आपकी निर्भरता 100% खत्म हो जाती है।",
-        whyPill: "मैनुअल काम का असली नुकसान",
-        whyTitle: "मजबूत सिस्टम के बिना <span class='text-brandPurple'>हर बिज़नेस बिखर जाता है।</span>",
-        whyDesc: "अगर आपके या अकाउंटेंट के छुट्टी पर जाते ही काम रुक जाता है, तो आप बिज़नेस नहीं चला रहे — एक तनाव भरी नौकरी कर रहे हैं।",
-        stopAskingPill: "स्टाफ पर निर्भरता खत्म",
-        stopAskingTitle: "स्टाफ से पूछना बंद करें: <span class='text-brandPurple'>'आज का कलेक्शन कितना हुआ?'</span>",
-        stopAskingDesc: "महीने के अंत तक रिपोर्ट का इंतज़ार न करें। 1 क्लिक में अपनी दुकान, फैक्ट्री और बैंक का 100% लाइव हिसाब अपने फोन पर देखें।"
-    },
-    en: {
-        langBtn: "हिंदी में देखें",
-        heroPill: "BUSINESS SYSTEMS & OPERATIONS STUDIO — AURANGABAD",
-        heroTitle: "Stop wasting hours on manual spreadsheets. <span class='text-brandPurple block shimmer-text'>Automate your business.</span>",
-        heroDesc: "We engineer bespoke cloud web software, Google Workspace automated ecosystems, and live accounting MIS dashboards that eliminate staff dependency and give you full business control.",
-        whyPill: "THE HIDDEN COST OF MANUAL WORK",
-        whyTitle: "Every business breaks without <span class='text-brandPurple'>solid systems.</span>",
-        whyDesc: "If your business stops when you or your key staff take a holiday, you don't own a business — you own an exhausting job.",
-        stopAskingPill: "ZERO STAFF DEPENDENCY",
-        stopAskingTitle: "Stop asking: <span class='text-brandPurple'>\"आज का कलेक्शन कितना हुआ?\"</span>",
-        stopAskingDesc: "Never wait for an accountant or manager to send you month-end files. Get 100% accurate, live financial & inventory reports directly on your phone in under 2 seconds."
-    }
-};
-
-window.applyLanguage = function(lang) {
-    const t = translations[lang];
-    if (!t) return;
-
-    const langTextEl = document.getElementById('lang-text');
-    if (langTextEl) langTextEl.textContent = t.langBtn;
-
-    const heroPill = document.querySelector('#hero-text .purple-pill');
-    if (heroPill) heroPill.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-brandPurple"></span> ${t.heroPill}`;
-
-    const heroH1 = document.querySelector('#hero-text h1');
-    if (heroH1) heroH1.innerHTML = t.heroTitle;
-
-    const heroP = document.querySelector('#hero-text p');
-    if (heroP) heroP.textContent = t.heroDesc;
-
-    const whyPill = document.querySelector('#why-us .purple-pill');
-    if (whyPill) whyPill.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-amber-500"></i> ${t.whyPill}`;
-
-    const whyH2 = document.querySelector('#why-us h2');
-    if (whyH2) whyH2.innerHTML = t.whyTitle;
-
-    const whyP = document.querySelector('#why-us p');
-    if (whyP) whyP.textContent = t.whyDesc;
-
-    const livePill = document.querySelector('#live-reports .purple-pill');
-    if (livePill) livePill.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> ${t.stopAskingPill}`;
-
-    const liveH2 = document.querySelector('#live-reports h2');
-    if (liveH2) liveH2.innerHTML = t.stopAskingTitle;
-
-    const liveP = document.querySelector('#live-reports p');
-    if (liveP) liveP.textContent = t.stopAskingDesc;
-
-    localStorage.setItem('tab_lang', lang);
-};
-
-window.toggleLanguage = function() {
-    currentLang = currentLang === 'en' ? 'hi' : 'en';
-    window.applyLanguage(currentLang);
-};
 
 // --- (D) Live MIS Dashboard Simulator ---
 const demoData = {
@@ -476,7 +408,7 @@ window.switchSprintPhase = function(phaseNum) {
         box.innerHTML = `
             <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800">
                 <span class="text-xs text-brandPurple font-bold">${data.phase}</span>
-                <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full">Zero Business Downtime</span>
+                <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full">Minimal Business Disruption</span>
             </div>
             <h4 class="text-base sm:text-lg font-bold text-white mt-3 mb-2">${data.title}</h4>
             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">${data.desc}</p>
@@ -691,8 +623,42 @@ document.addEventListener('DOMContentLoaded', () => {
         roiStaffSlider.addEventListener('input', window.updateRoiCalc);
     }
 
+    // FAQ aria-expanded sync
+    faqButtons.forEach(b => b.addEventListener('click', () => {
+        faqButtons.forEach(x => x.setAttribute('aria-expanded', x.classList.contains('active') ? 'true' : 'false'));
+    }));
+
+    // Hero counters
+    const counters = document.querySelectorAll('.count-num');
+    if (counters.length && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                const target = parseInt(el.dataset.count, 10);
+                const start = performance.now();
+                const dur = 1200;
+                (function tick(now) {
+                    const t = Math.min((now - start) / dur, 1);
+                    el.textContent = Math.round(target * (1 - Math.pow(1 - t, 3)));
+                    if (t < 1) requestAnimationFrame(tick);
+                })(start);
+                io.unobserve(el);
+            });
+        }, { threshold: 0.4 });
+        counters.forEach(el => io.observe(el));
+    }
+
+    // Spotlight glow follows mouse on insurance cards
+    document.querySelectorAll('.spotlight-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const r = card.getBoundingClientRect();
+            card.style.setProperty('--mouse-x', (e.clientX - r.left) + 'px');
+            card.style.setProperty('--mouse-y', (e.clientY - r.top) + 'px');
+        });
+    });
+
     // Initialize all visual modules
-    window.applyLanguage(currentLang);
     window.switchLiveDemo('sales');
     window.triggerWaSim('dispatch');
     window.switchFlowStage(1);

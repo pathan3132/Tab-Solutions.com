@@ -1,4 +1,4 @@
-/* ============ BASE & CLEAN TEXTURED CANVAS ============ */
+/* ============ BASE ============ */
 body {
     background-color: #FFFFFF;
     color: #334155;
@@ -7,7 +7,7 @@ body {
     position: relative;
 }
 
-/* Subtle LowCode-style engineering grid texture */
+/* Subtle grid texture */
 .agency-grid-bg {
     position: fixed;
     inset: 0;
@@ -21,7 +21,7 @@ body {
     background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
 }
 
-/* ============ LOWCODE AGENCY STYLE CARDS ============ */
+/* ============ CARDS ============ */
 .agency-card {
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
@@ -78,7 +78,7 @@ body {
     border-color: #CBD5E1;
 }
 
-/* ============ FOUNDER PHOTO CONTAINER (LANDSCAPE 16/11 FIT) ============ */
+/* ============ FOUNDER PHOTO ============ */
 .founder-box {
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
@@ -94,7 +94,7 @@ body {
     display: block;
 }
 
-/* ============ 1. TOP SCROLL PROGRESS BAR ============ */
+/* ============ SCROLL PROGRESS BAR ============ */
 #scroll-progress-bar {
     position: fixed;
     top: 0;
@@ -106,7 +106,7 @@ body {
     transition: width 0.1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ============ 2. MOUSE SPOTLIGHT GLOW ON CARDS (LINEAR STYLE) ============ */
+/* ============ CARD SPOTLIGHT ============ */
 .spotlight-card {
     position: relative;
     overflow: hidden;
@@ -132,37 +132,10 @@ body {
     opacity: 1;
 }
 
-/* ============ 3. HIGH-LEVEL SCROLL REVEAL PHYSICS ============ */
-.reveal-on-scroll {
-    opacity: 0;
-    transform: translateY(28px) scale(0.98);
-    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: opacity, transform;
-}
-
-.reveal-on-scroll.revealed {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-}
-
-/* ============ 4. LUXURY GRADIENT SHIMMER SWEEP ============ */
-.shimmer-text {
-    background: linear-gradient(110deg, #0F172A 30%, #7C3AED 50%, #0F172A 70%);
-    background-size: 200% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textShimmer 6s infinite ease-in-out;
-}
-
+/* ============ SHIMMER KEYFRAMES ============ */
 @keyframes textShimmer {
     0%, 100% { background-position: 100% 0; }
     50% { background-position: -100% 0; }
-}
-
-/* ============ 5. MAGNETIC BUTTON PHYSICS ============ */
-.magnetic-btn {
-    transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.25s ease;
-    will-change: transform;
 }
 
 /* ============ FAQ ACCORDION STYLES ============ */
@@ -231,10 +204,9 @@ body {
 @media (prefers-reduced-motion: reduce) {
     #preloader { display: none !important; }
     .hero-in > * { animation: none; opacity: 1; }
-    .reveal-on-scroll { opacity: 1; transform: none; }
 }
 
-/* ============ SHOWSTOPPER HIGHLIGHT GLOW ============ */
+/* ============ HIGHLIGHT TEXT ============ */
 .shimmer-text {
     background: linear-gradient(110deg, #7C3AED 20%, #10B981 50%, #7C3AED 80%);
     background-size: 200% 100%;
